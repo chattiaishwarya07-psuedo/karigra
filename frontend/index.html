@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>KalaMarket — AI Artisan Digital Business Manager | SIH 26090</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23944B00%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z%22/></svg>">
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/screens.css">
+</head>
+<body>
+  <div id="app-container">
+    <!-- Top Application Header -->
+    <header class="app-header" id="app-header">
+      <div class="header-left">
+        <button class="header-icon-btn" id="header-back-btn" title="Back" style="display: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        </button>
+        <button class="header-icon-btn" id="header-menu-btn" title="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+        <a class="brand-title" id="header-brand-link" href="javascript:void(0)">
+          <svg class="brand-logo-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="KalaMarket Logo">
+            <defs>
+              <linearGradient id="kalaLogoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#C26300"/>
+                <stop offset="100%" stop-color="#944B00"/>
+              </linearGradient>
+              <linearGradient id="kalaGoldGrad" x1="6" y1="6" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#F59E0B"/>
+                <stop offset="100%" stop-color="#D48B16"/>
+              </linearGradient>
+            </defs>
+            <path d="M12 2.5C10.2 6 10.2 9 12 12C13.8 9 13.8 6 12 2.5Z" fill="url(#kalaLogoGrad)"/>
+            <path d="M12 21.5C10.2 18 10.2 15 12 12C13.8 15 13.8 18 12 21.5Z" fill="url(#kalaLogoGrad)"/>
+            <path d="M2.5 12C6 10.2 9 10.2 12 12C9 13.8 6 13.8 2.5 12Z" fill="url(#kalaLogoGrad)"/>
+            <path d="M21.5 12C18 10.2 15 10.2 12 12C15 13.8 18 13.8 21.5 12Z" fill="url(#kalaLogoGrad)"/>
+            <path d="M18.7 5.3C15.5 6.5 13.5 8.5 12 12C15.5 10.5 17.5 8.5 18.7 5.3Z" fill="url(#kalaGoldGrad)" opacity="0.9"/>
+            <path d="M18.7 18.7C17.5 15.5 15.5 13.5 12 12C13.5 15.5 15.5 17.5 18.7 18.7Z" fill="url(#kalaGoldGrad)" opacity="0.9"/>
+            <path d="M5.3 18.7C8.5 17.5 10.5 15.5 12 12C8.5 13.5 6.5 15.5 5.3 18.7Z" fill="url(#kalaGoldGrad)" opacity="0.9"/>
+            <path d="M5.3 5.3C6.5 8.5 8.5 10.5 12 12C10.5 8.5 8.5 6.5 5.3 5.3Z" fill="url(#kalaGoldGrad)" opacity="0.9"/>
+            <circle cx="12" cy="12" r="2.2" fill="#FAF7F2" stroke="url(#kalaLogoGrad)" stroke-width="1.2"/>
+            <circle cx="12" cy="12" r="1" fill="url(#kalaGoldGrad)"/>
+          </svg>
+          <span class="brand-title-text" id="header-brand-text">KalaMarket</span>
+        </a>
+      </div>
+
+      <!-- Right Header Actions (Language Switcher + View Switcher) -->
+      <div class="header-right">
+        <!-- Language Switcher Dropdown -->
+        <div class="language-dropdown-wrapper" id="lang-dropdown-wrapper">
+          <button class="lang-selector-btn" id="lang-selector-btn" title="Change Language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span id="current-lang-label">English</span>
+            <span style="font-size: 0.7rem; opacity: 0.7;">▾</span>
+          </button>
+          
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu" style="display: none;">
+            <button class="lang-opt-btn active" data-lang="en">English (English)</button>
+            <button class="lang-opt-btn" data-lang="hi">हिन्दी (Hindi)</button>
+            <button class="lang-opt-btn" data-lang="te">తెలుగు (Telugu)</button>
+            <button class="lang-opt-btn" data-lang="bn">বাংলা (Bengali)</button>
+            <button class="lang-opt-btn" data-lang="mr">मराठी (Marathi)</button>
+            <button class="lang-opt-btn" data-lang="ta">தமிழ் (Tamil)</button>
+            <button class="lang-opt-btn" data-lang="kn">ಕನ್ನಡ (Kannada)</button>
+            <button class="lang-opt-btn" data-lang="gu">ગુજરાતી (Gujarati)</button>
+          </div>
+        </div>
+
+        <!-- Header Cart Button with Live Badge -->
+        <button class="header-icon-btn" id="header-cart-btn" title="View Shopping Cart" style="position: relative;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count-badge" id="header-cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Quick Role Switcher (Artisan Studio vs Buyer Marketplace) -->
+        <button class="switch-view-btn" id="switch-view-btn" title="Toggle Artisan / Buyer View">
+          <span id="switch-view-text">Switch View</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Dynamic Screen Outlet -->
+    <main id="screen-outlet">
+      <!-- Injected by Router -->
+    </main>
+
+    <!-- Floating Action Button (Add Product / AI Studio) -->
+    <button class="fab-btn" id="global-fab-btn" title="Add New Product (AI Studio)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+    </button>
+
+    <!-- Bottom Navigation Bar (Stitch App Style with Lucide Icons) -->
+    <nav class="bottom-nav" id="app-bottom-nav">
+      <button class="nav-item active" data-screen="dashboard" id="nav-home">
+        <span class="nav-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </span>
+        <span class="nav-label" data-i18n="nav_home">Home</span>
+      </button>
+
+      <button class="nav-item" data-screen="wholesale" id="nav-search">
+        <span class="nav-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </span>
+        <span class="nav-label" data-i18n="nav_search">Sourcing</span>
+      </button>
+
+      <button class="nav-item" data-screen="buyer_catalogue" id="nav-cart">
+        <span class="nav-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </span>
+        <span class="nav-label" data-i18n="nav_market">Market</span>
+      </button>
+
+      <button class="nav-item" data-screen="profile" id="nav-profile">
+        <span class="nav-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </span>
+        <span class="nav-label" data-i18n="nav_profile">Profile</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="/js/app.js?v=20260902"></script>
+</body>
+</html>

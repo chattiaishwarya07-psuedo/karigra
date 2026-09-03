@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Uploaded files
+backend/uploads/
+
+# Local databases
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db

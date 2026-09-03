@@ -1,0 +1,444 @@
+/* ==========================================================================
+   KALAVERSE / KalaMarket - Main Design System & Global Styles
+   Google Stitch Source of Truth: Artisanal Terracotta, Ivory & Indigo
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Brand Primary: Warm Artisanal Terracotta / Rust Earth */
+  --color-terracotta: #944B00;
+  --color-terracotta-hover: #7E3E00;
+  --color-terracotta-dark: #663200;
+  --color-terracotta-light: #C26300;
+  --color-terracotta-soft: #FBF4EC;
+
+  /* Brand Secondary & Accents */
+  --color-indigo: #5B67EA;
+  --color-indigo-hover: #4A56DA;
+  --color-indigo-soft: #EEF0FD;
+  --color-gold: #D48B16;
+  --color-gold-light: #FEF3C7;
+  --color-emerald: #15803D;
+  --color-emerald-soft: #DCFCE7;
+  --color-crimson: #BE123C;
+
+  /* Surfaces & Backgrounds (Warm Linen / Ivory Canvas) */
+  --bg-primary: #FAF7F2;
+  --bg-secondary: #F4EFE6;
+  --bg-tertiary: #EBE5D8;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFFFFF;
+  --bg-card-soft: #F9F7F3;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  /* Text Colors */
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --text-muted: #8C827A;
+  --text-white: #FFFFFF;
+  --text-brand: #944B00;
+  --text-indigo: #5B67EA;
+
+  /* Borders & Dividers */
+  --border-subtle: #EBE5DB;
+  --border-card: #E8E2D7;
+  --border-focus: #944B00;
+  --border-indigo: #5B67EA;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(40, 20, 0, 0.04);
+  --shadow-sm: 0 2px 6px rgba(40, 20, 0, 0.06);
+  --shadow-md: 0 4px 14px rgba(40, 20, 0, 0.08);
+  --shadow-lg: 0 10px 28px rgba(40, 20, 0, 0.12);
+  --shadow-glow: 0 0 20px rgba(148, 75, 0, 0.2);
+
+  /* Typography */
+  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-telugu: 'Noto Sans Telugu', var(--font-body);
+  --font-hindi: 'Noto Sans Devanagari', var(--font-body);
+  --font-bengali: 'Noto Sans Bengali', var(--font-body);
+
+  /* Border Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding-bottom: 72px;
+  /* Space for bottom navigation on mobile */
+}
+
+/* App Main Container (Fluidly responsive app shell across mobile, tablet, desktop) */
+#app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 640px) {
+  #app-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 900px) {
+  #app-container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1100px) {
+  #app-container {
+    max-width: 1140px;
+    border-left: 1px solid var(--border-subtle);
+    border-right: 1px solid var(--border-subtle);
+  }
+}
+
+/* Top App Header */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: var(--transition-fast);
+}
+
+.header-icon-btn:hover {
+  background-color: var(--bg-secondary);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Language Dropdown Selector in Header */
+.language-dropdown-wrapper {
+  position: relative;
+}
+
+.lang-selector-btn {
+  background-color: #FAF6F0;
+  color: #44403C;
+  border: 1px solid #D8CAB8;
+  padding: 0.38rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-xs);
+}
+
+.lang-selector-btn:hover {
+  border-color: #C6B49E;
+  background-color: #F2EAE0;
+  color: #1C1917;
+  transform: translateY(-1px);
+}
+
+.lang-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  width: 180px;
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lang-opt-btn {
+  background: none;
+  border: none;
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.lang-opt-btn:hover {
+  background-color: var(--color-terracotta-soft);
+  color: var(--color-terracotta);
+}
+
+.lang-opt-btn.active {
+  background-color: var(--color-terracotta);
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-terracotta);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.switch-view-btn {
+  background-color: #FAF6F0;
+  color: #5E350E;
+  border: 1px solid #D8CAB8;
+  padding: 0.38rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: var(--shadow-xs);
+}
+
+.switch-view-btn:hover {
+  background-color: #F2EAE0;
+  border-color: #C6B49E;
+  color: var(--color-terracotta-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Screen Outlet */
+#screen-outlet {
+  flex: 1;
+  padding: 1rem 1.25rem 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bottom Navigation Bar (Stitch Mobile App Nav) */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 100%;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0.75rem;
+  z-index: 99;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.03);
+}
+
+@media (min-width: 640px) {
+  .bottom-nav {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 900px) {
+  .bottom-nav {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .bottom-nav {
+    max-width: 1140px;
+  }
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  color: #78716C;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: var(--color-terracotta);
+}
+
+.nav-item .nav-icon {
+  font-size: 1.25rem;
+}
+
+.nav-item.active {
+  color: var(--color-terracotta);
+  font-weight: 700;
+}
+
+.nav-item.active .nav-icon-wrapper {
+  background-color: #FDF1E6;
+  color: var(--color-terracotta);
+  padding: 3px 14px;
+  border-radius: 12px;
+}
+
+/* Floating Action Button for Add Product */
+.fab-btn {
+  position: fixed;
+  bottom: 85px;
+  right: clamp(16px, calc((100vw - min(1140px, 94vw)) / 2 + 20px), 36px);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: var(--color-terracotta);
+  color: var(--text-white);
+  border: none;
+  font-size: 1.75rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(148, 75, 0, 0.4);
+  transition: var(--transition-normal);
+  z-index: 90;
+}
+
+.fab-btn:hover {
+  transform: scale(1.08);
+  background-color: var(--color-terracotta-hover);
+}
+
+/* Global Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.toast {
+  background-color: #1C1917;
+  color: #FFFFFF;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: fadeIn 0.25s ease-out forwards;
+  pointer-events: auto;
+}
