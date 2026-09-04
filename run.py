@@ -1,5 +1,5 @@
 """
-KALAVERSE — AI Artisan Digital Business Manager
+ Karigra — AI Artisan Digital Business Manager
 Launcher script. Starts Flask backend server and hosts frontend on http://localhost:5000
 """
 import os
@@ -24,7 +24,7 @@ def open_browser():
 
 if __name__ == '__main__':
     print("=" * 65)
-    print("KALAVERSE - AI Artisan Digital Business Manager")
+    print("Karigra - AI Artisan Digital Business Manager")
     print("=" * 65)
     print("Initializing Database & Seed Data...")
     seed_database()

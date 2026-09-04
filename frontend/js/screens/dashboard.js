@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Artisan Dashboard (Stitch Screen 3)
+ * Karigra - Screen: Artisan Dashboard (Stitch Screen 3)
  * Full i18n support, Indian Rupee (₹), Dynamic AI Market Insights & Dedicated My Products navigation
  */
 

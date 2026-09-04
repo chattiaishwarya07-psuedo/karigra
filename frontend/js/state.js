@@ -1,5 +1,5 @@
 /**
- * KALAVERSE - Global Reactive State Store
+ * Karigra - Global Reactive State Store
  */
 
 export const State = {

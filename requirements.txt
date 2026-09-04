@@ -4,3 +4,4 @@ requests>=2.31.0
 werkzeug>=3.0.0
 rembg>=2.0.50
 onnxruntime>=1.16.0
+gunicorn>=23.0.0

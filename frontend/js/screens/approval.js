@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Add Product - Step 3: Publish & Boutique Approval
+ * Karigra - Screen: Add Product - Step 3: Publish & Boutique Approval
  * 1-Click Publishing, Complete Details Summary, Database Persistence with 100% i18n
  */
 

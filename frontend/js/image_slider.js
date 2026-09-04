@@ -1,5 +1,5 @@
 /**
- * KALAVERSE - Interactive Before/After Image Comparison Slider
+ * Karigra - Interactive Before/After Image Comparison Slider
  */
 
 export function initImageCompareSlider(containerEl) {

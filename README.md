@@ -1,4 +1,4 @@
-# KALAVERSE — AI Artisan Digital Business Manager
+# Karigra — AI Artisan Digital Business Manager
 **Smart India Hackathon (SIH 26090)**
 
 > Transform an authentic craft photograph and regional-language voice description into a market-ready, multilingual e-commerce digital listing with AI pricing.

@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Comprehensive Multilingual Translation Engine (i18n)
+ * Karigra - Comprehensive Multilingual Translation Engine (i18n)
  * 100% Full-Coverage for English and 7 Indian Regional Languages:
  * Hindi (हिन्दी), Telugu (తెలుగు), Bengali (বাংলা), Marathi (मराठी), Tamil (தமிழ்), Kannada (ಕನ್ನಡ), Gujarati (ગુજરાતી)
  */
@@ -9,7 +9,7 @@ import { State } from './state.js';
 export const translations = {
   en: {
     // Header & Navigation
-    brand_name: "KalaMarket",
+    brand_name: "Karigra",
     switch_view: "Switch View",
     artisan_view: "Artisan View",
     buyer_view: "Buyer Market",
@@ -17,11 +17,11 @@ export const translations = {
     nav_search: "Sourcing",
     nav_market: "Market",
     nav_profile: "Profile",
-    quick_menu_title: "KalaMarket Quick Screen Navigator",
+    quick_menu_title: "Karigra Quick Screen Navigator",
     
     // Auth & Welcome
     welcome_title: "Namaste | Welcome",
-    welcome_subtitle: "KalaMarket - Handcrafted with Love.",
+    welcome_subtitle: "Karigra - Handcrafted with Love.",
     select_language: "Select Language",
     show_more_languages: "Show more languages ⌄",
     show_less_languages: "Show fewer languages ⌃",
@@ -30,7 +30,7 @@ export const translations = {
     continue_google: "Continue with Google",
     continue_email: "Continue with Email",
     new_artisan_register: "New Artisan? Register (Sign Up)",
-    terms_note: "By continuing, you agree to KalaMarket's Terms and Privacy Policy.",
+    terms_note: "By continuing, you agree to Karigra's Terms and Privacy Policy.",
     
     // Login Screen
     artisan_login_tab: "Artisan Login",
@@ -59,7 +59,7 @@ export const translations = {
     demo_code_notice: "Demo Auto-Filled Code:",
     
     // Join / Onboarding
-    join_title: "Join KalaMarket",
+    join_title: "Join Karigra",
     join_subtitle: "Share your craft with the world. Set up your artisan profile in a few easy steps.",
     personal_details: "Personal Details",
     full_name: "Full Name",
@@ -167,9 +167,9 @@ export const translations = {
     gi_tag_verified: "GI Tag Verified",
     artisan_desc_heading: "Artisan Description:",
     cultural_story_heading: "Cultural Heritage Story:",
-    publish_now: "Publish to KalaMarket",
+    publish_now: "Publish to Karigra",
     publishing_status: "Saving Product & Publishing to Marketplace...",
-    published_success: "Successfully Published to KalaMarket! Your listing is now live.",
+    published_success: "Successfully Published to Karigra! Your listing is now live.",
     back_to_edit: "to Edit Details",
     
     // Marketplace & Buyer Catalogue

@@ -1,5 +1,5 @@
 /**
- * KALAVERSE - API Client
+ * Karigra - API Client
  * Centralized async fetch client for REST endpoints.
  */
 

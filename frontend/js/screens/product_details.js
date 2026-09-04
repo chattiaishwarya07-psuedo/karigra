@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Product Details & AI Description Translation
+ * Karigra - Screen: Product Details & AI Description Translation
  * Displays full specifications, cultural heritage story, artisan portrait, and functional Add to Cart / Buy Now
  */
 

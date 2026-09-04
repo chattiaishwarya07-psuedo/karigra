@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Join KalaMarket (Artisan Registration & Sign Up)
+ * Karigra - Screen: Join Karigra (Artisan Registration & Sign Up)
  * Full interactive validation, GPS location detection, and profile registration with 100% i18n
  */
 

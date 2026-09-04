@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Add Product - Step 1: Photo & Magic Snap Studio
+ * Karigra - Screen: Add Product - Step 1: Photo & Magic Snap Studio
  * Full working file upload from device, Magic Snap enhancement engine, Before/After slider with 100% i18n
  */
 

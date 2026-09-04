@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Add Product - Step 2: Comprehensive Product Details & AI Voice
+ * Karigra - Screen: Add Product - Step 2: Comprehensive Product Details & AI Voice
  * Structured product details with 100% i18n coverage across all 8 languages
  */
 

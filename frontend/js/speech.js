@@ -1,5 +1,5 @@
 /**
- * KALAVERSE - Speech Recognition, Audio Recording, Waveform Visualizer & Speech Synthesis
+ * Karigra - Speech Recognition, Audio Recording, Waveform Visualizer & Speech Synthesis
  * Genuinely functional speech-to-text supporting Telugu, Hindi, English, Bengali, Marathi, Tamil, Kannada, and Gujarati.
  */
 

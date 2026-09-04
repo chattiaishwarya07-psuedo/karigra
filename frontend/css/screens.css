@@ -1,9 +1,9 @@
 /* ==========================================================================
-   KALAVERSE / KalaMarket - Screen Specific Styles
+  Karigra - Screen Specific Styles
    Faithfully matching all Google Stitch Screens
    ========================================================================== */
 
-/* --- SCREEN: DISCOVER KALAMARKET (Landing Overview) --- */
+/* --- SCREEN: DISCOVER KARIGRA (Landing Overview) --- */
 .discover-hero {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -205,7 +205,7 @@
   margin-top: 1.25rem;
 }
 
-/* --- SCREEN: JOIN KALAMARKET (Onboarding) --- */
+/* --- SCREEN: JOIN KARIGRA (Onboarding) --- */
 .join-header {
   margin-bottom: 1.25rem;
 }

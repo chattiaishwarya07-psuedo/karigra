@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Wholesale Raw Materials B2B Sourcing
+ * Karigra - Screen: Wholesale Raw Materials B2B Sourcing
  * All pricing in Indian Rupees (₹) with dynamic category, search filtering, and 100% i18n
  */
 

@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Discover KalaMarket (Landing Page Overview)
+ * Karigra - Screen: Discover Karigra (Landing Page Overview)
  * Video showcase, Artisan and Buyer pathways, Lucide icons, and 100% i18n support
  */
 

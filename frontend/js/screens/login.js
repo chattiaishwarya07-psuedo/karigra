@@ -142,7 +142,7 @@ export function renderLoginScreen(container, payload = {}) {
             <form id="email-login-form" novalidate>
               <div class="form-group">
                 <label class="form-label">${t('email_address')} *</label>
-                <input type="email" class="form-control" id="login-email-input" placeholder="artisan@kalamarket.org" value="ramulu.weaver@kalamarket.org" required>
+                <input type="email" class="form-control" id="login-email-input" placeholder="artisan@karigra.org" value="ramulu.weaver@karigra.org" required>
                 <div class="form-error" id="email-error-msg" style="display: none;">${t('email_validation_error')}</div>
               </div>
 

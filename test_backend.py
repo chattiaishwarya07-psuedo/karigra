@@ -21,7 +21,7 @@ class TestKalaverseApp(unittest.TestCase):
     def test_01_index_page(self):
         res = self.client.get('/')
         self.assertEqual(res.status_code, 200)
-        self.assertTrue(b'KalaMarket' in res.data or b'KALAVERSE' in res.data)
+        self.assertIn(b'Karigra', res.data)
 
     def test_02_get_artisans(self):
         res = self.client.get('/api/artisans')

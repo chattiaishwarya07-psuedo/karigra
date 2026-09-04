@@ -1,12 +1,12 @@
 /**
- * KALAVERSE / KalaMarket - Lucide Vector Icons Library
+ * Karigra - Lucide Vector Icons Library
  * Clean, modern stroke SVG icons adhering to the artisanal design system
  * Equipped with safe Proxy fallback to prevent any runtime TypeError
  */
 
 const baseIcons = {
   brandLogo: (size = 22, className = '') => `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" class="brand-logo-icon ${className}" aria-label="KalaMarket Logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" class="brand-logo-icon ${className}" aria-label="Karigra Logo">
       <defs>
         <linearGradient id="kalaLogoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stop-color="#C26300"/>

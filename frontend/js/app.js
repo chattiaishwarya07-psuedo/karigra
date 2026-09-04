@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Main App Entry Point & Bootstrap
+ * Karigra - Main App Entry Point & Bootstrap
  * Connects all screens, navigation events, language translations, cart drawer, and state listeners
  */
 
@@ -187,11 +187,11 @@ function initApp() {
   if (menuBtn) {
     menuBtn.addEventListener('click', () => {
       const choice = prompt(
-        "KalaMarket Quick Screen Navigator:\n" +
-        "1. Discover KalaMarket (Landing Overview)\n" +
+        "Karigra Quick Screen Navigator:\n" +
+        "1. Discover Karigra (Landing Overview)\n" +
         "2. Welcome & Language Selection (Stitch Screen 1A)\n" +
         "3. Login (Phone OTP / Email / Google / Demo)\n" +
-        "4. Join KalaMarket Onboarding / Sign Up (Stitch Screen 1B)\n" +
+        "4. Join Karigra Onboarding / Sign Up (Stitch Screen 1B)\n" +
         "5. Artisan Dashboard (Stitch Screen 3)\n" +
         "6. Add Product: AI Photo Studio (Stitch Screen 4)\n" +
         "7. Add Product: Voice & AI Pricing (Stitch Screen 6)\n" +

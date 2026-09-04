@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Artisan Heritage Profile
+ * Karigra - Screen: Artisan Heritage Profile
  * Displays artisan bio, GI tag credentials, product catalog, and account controls with 100% i18n
  */
 

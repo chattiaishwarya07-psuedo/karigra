@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: My Products (Dedicated Artisan Craft Catalogue)
+ * Karigra - Screen: My Products (Dedicated Artisan Craft Catalogue)
  * Displays all products uploaded or created by the current artisan with live search,
  * category filtering, status indicators, views analytics, and management actions.
  */

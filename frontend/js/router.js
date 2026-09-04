@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Application Router & Screen Coordinator
+ * Karigra - Application Router & Screen Coordinator
  */
 
 import { State } from './state.js';

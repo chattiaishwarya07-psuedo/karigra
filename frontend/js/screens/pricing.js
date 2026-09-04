@@ -1,5 +1,5 @@
 /**
- * KALAVERSE - Screen 6: AI Pricing Assistant
+ * Karigra - Screen 6: AI Pricing Assistant
  */
 
 import { State } from '../state.js';

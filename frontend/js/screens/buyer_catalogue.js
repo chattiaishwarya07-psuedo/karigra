@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Buyer Marketplace (Stitch Screen 8)
+ * Karigra - Screen: Buyer Marketplace (Stitch Screen 8)
  * Dynamic category filters, price sorting, search, unique product keys, Add to Cart, and Cart Drawer integration
  */
 

@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Dedicated Market Insights & Creation Studio
+ * Karigra - Screen: Dedicated Market Insights & Creation Studio
  * Full AI market analytics, demand curves, buyer search keywords, seasonal trends,
  * and actionable creation recommendations tailored specifically to the artisan's craft.
  */
@@ -278,7 +278,7 @@ export function renderMarketInsightsScreen(container) {
             Top Buyer Search Trends & Keywords
           </h2>
           <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0 0 0.85rem 0;">
-            Phrases frequently searched by national and international buyers on KalaMarket
+            Phrases frequently searched by national and international buyers on Karigra
           </p>
 
           <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">

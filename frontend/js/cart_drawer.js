@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Shopping Cart Slideout Drawer Component
+ * Karigra - Shopping Cart Slideout Drawer Component
  * Handles Cart items, quantity increment/decrement, item removal, live total in ₹, and checkout
  */
 

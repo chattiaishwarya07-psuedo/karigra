@@ -1,5 +1,5 @@
 /**
- * KALAVERSE / KalaMarket - Screen: Welcome & Language Selection (Stitch Screen 1A)
+ * Karigra - Screen: Welcome & Language Selection (Stitch Screen 1A)
  * Support for Indian regional languages, Lucide icons, and quick auth
  */
 
